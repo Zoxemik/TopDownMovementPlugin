@@ -33,7 +33,18 @@ The **TopDownMovement** plugin is designed for Unreal Engine projects aiming for
    - Find and enable `TopDownMovement`.
    - Restart Unreal Engine to apply changes.
 
-## Usage
+## Plugin Content Example
+
+<p align="center">
+  <img src="images/Content.PNG" alt="Plugin Content Overview" width="700"/>
+</p>
+
+This image shows a sample plugin folder structure and assets:
+- `BP_Player` and `BP_PlayerController` - Blueprint classes based on the core C++ classes.
+- `C_Zoom` - A float curve asset controlling zoom behavior.
+- `DA_InputSetup` - A Data Asset for organizing input actions.
+- `M_Cursor` - The material for visualizing the cursor.
+- `Input/` - Folder containing Input Actions and Mapping Contexts.
 
 ### Player Pawn Setup
 
@@ -88,3 +99,5 @@ TopDownController->OnKeySwitch.AddDynamic(this, &YourClass::HandleInputSwitch);
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+
