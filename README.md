@@ -46,6 +46,8 @@ This image shows a sample plugin folder structure and assets:
 - `M_Cursor` - The material for visualizing the cursor.
 - `Input/` - Folder containing Input Actions and Mapping Contexts.
 
+## Usage
+
 ### Player Pawn Setup
 
 - Use or subclass `ATopDownPlayer` pawn provided by the plugin.
@@ -72,16 +74,16 @@ This ensures smooth and consistent updates for camera positioning and interactio
 
 ### Extending Functionality
 
-- Functions like `CollisionOverlapCheck`, camera logic (`MoveTracking`, `UpdateZoom`), and interaction events (`OnSelection`) can be customized to fit specific game mechanics or interaction models.
+- Functions like `CollisionOverlapCheck`, camera logic (`MoveTracking`), and interaction events (`OnSelection`) can be customized to fit specific game mechanics or interaction models.
 
-For handling custom interactions, implement the following Blueprint event:
+For handling custom interactions, call the following Blueprint function:
 
 ```cpp
 /**
  * Handles the selection logic; implementation depends on the specific project requirements.
  */
-UFUNCTION(BlueprintImplementableEvent)
-void OnSelection();
+UFUNCTION(BlueprintCallable)
+void HandleSelection();
 ```
 
 ## Example
