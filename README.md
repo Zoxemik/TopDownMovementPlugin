@@ -1,6 +1,6 @@
 # TopDownMovement Plugin for Unreal Engine
 
-![Demo GIF Placeholder](YourDemoGIF.gif)
+![Demo GIF Placeholder](images/Demo.gif)
 
 ## Overview
 
